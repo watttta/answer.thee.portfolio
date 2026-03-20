@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>answer.thee. | Portfolio</title>
-    <meta name="description" content="answer.thee. - Web Design, AI Solutions, EC Consulting">
+    
+    <!-- 基本のSEOメタタグ -->
+    <title>Web制作・ECコンサル・AI導入支援 | answer.thee. (アンサー・ジー)</title>
+    <meta name="description" content="answer.thee.（アンサー・ジー）は、現場で培った営業力と最新のWEB・AIスキルを掛け合わせ、中小企業の売上に直結するWeb制作、ECコンサルティング、AI導入支援ソリューションを提供します。">
+    <meta name="keywords" content="Web制作, ECコンサルティング, AI導入支援, ランディングページ制作, コーポレートサイト制作, answer.thee.">
+    
+    <!-- OGPタグ (SNSでのシェア用) -->
+    <meta property="og:title" content="Web制作・ECコンサル・AI導入支援 | answer.thee. (アンサー・ジー)">
+    <meta property="og:description" content="現場で培った営業力と最新のWEB・AIスキルを掛け合わせ、お客様の売上に直結するソリューションをご提案します。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://answer-thee.com/"> <!-- ※公開時に実際のURLに変更してください -->
+    <meta property="og:image" content="https://answer-thee.com/ogp-image.jpg"> <!-- ※公開時に実際のOGP画像URLに変更してください -->
+    <meta property="og:site_name" content="answer.thee.">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Web制作・ECコンサル・AI導入支援 | answer.thee.">
+    <meta name="twitter:description" content="現場で培った営業力と最新のWEB・AIスキルを掛け合わせ、お客様の売上に直結するソリューションをご提案します。">
+    <meta name="twitter:image" content="https://answer-thee.com/ogp-image.jpg"> <!-- ※公開時に実際の画像URLに変更してください -->
+
+    <!-- Canonical URL (正規URLの指定) -->
+    <link rel="canonical" href="https://answer-thee.com/"> <!-- ※公開時に実際のURLに変更してください -->
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -118,14 +138,14 @@
                 <button onclick="navigateTo('contact')" class="hover:text-brand-yellow transition-colors duration-300">CONTACT</button>
             </nav>
 
-            <button onclick="toggleMobileMenu()" class="md:hidden text-brand-blue hover:text-brand-yellow transition-colors p-2">
+            <button onclick="toggleMobileMenu()" class="md:hidden text-brand-blue hover:text-brand-yellow transition-colors p-2" aria-label="メニューを開く">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </header>
 
         <!-- モバイルメニューオーバーレイ -->
         <div id="mobile-menu-overlay" class="animate-fade-in">
-            <button onclick="toggleMobileMenu()" class="absolute top-6 right-6">
+            <button onclick="toggleMobileMenu()" class="absolute top-6 right-6" aria-label="メニューを閉じる">
                 <i data-lucide="x" class="w-8 h-8 text-white"></i>
             </button>
             <button onclick="navigateTo('home'); toggleMobileMenu();" class="text-3xl font-black font-montserrat hover:text-brand-yellow transition-colors">HOME</button>
@@ -144,7 +164,7 @@
                     
                     <div class="lg:col-span-1 bg-brand-blue rounded-2xl md:rounded-3xl p-8 md:p-12 flex flex-col justify-center items-center text-white relative overflow-hidden shadow-lg min-h-[450px] md:min-h-[600px] lg:h-full group/hero cursor-default">
                         <div class="relative z-10 flex items-center justify-center w-56 h-56 md:w-96 md:h-96 mb-6 md:mb-12 transition-transform duration-500 group-hover/hero:scale-105">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" class="w-full h-full text-brand-yellow fill-brand-yellow/10 animate-pulse group-hover/hero:animate-none transition-all duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" class="w-full h-full text-brand-yellow fill-brand-yellow/10 animate-pulse group-hover/hero:animate-none transition-all duration-500" aria-hidden="true">
                                 <path d="M21 16V8L12 3L3 8V16L12 21L21 16Z" />
                             </svg>
                             <div class="absolute flex flex-col items-center justify-center opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500 pointer-events-none">
@@ -223,7 +243,7 @@
                     <div class="absolute top-0 right-0 w-64 h-64 bg-brand-yellow rounded-full blur-[80px] opacity-20"></div>
                     
                     <div class="w-32 h-32 md:w-40 md:h-40 bg-white rounded-full mx-auto mb-6 overflow-hidden border-4 border-brand-yellow shadow-lg relative z-10">
-                        <img src="https://lh3.googleusercontent.com/d/1DIYdCzuRtbyQQxE1wlNCugTt07oNpIOF" alt="笹原 賢一" class="w-full h-full object-cover object-[50%_20%]">
+                        <img src="https://lh3.googleusercontent.com/d/1DIYdCzuRtbyQQxE1wlNCugTt07oNpIOF" alt="answer.thee. 代表 笹原 賢一のプロフィール画像" class="w-full h-full object-cover object-[50%_20%]">
                     </div>
                     
                     <h1 class="text-2xl md:text-4xl font-black mb-2 font-montserrat tracking-widest relative z-10">
@@ -409,7 +429,7 @@
                             <!-- Work Item 1 -->
                             <div onclick="navigateTo('work-detail-1')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/1QbHs448KbFS_IsHZ8-VGzxwUMBvYCNyv" alt="Work 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/1QbHs448KbFS_IsHZ8-VGzxwUMBvYCNyv" alt="製造業コーポレートサイト・リニューアルのデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
@@ -423,7 +443,7 @@
                             <!-- Work Item 2 -->
                             <div onclick="navigateTo('work-detail-2')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/1zqdo0T2mGsvejO3Tgw5DZMVSJ3WCWeuv" alt="Work 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/1zqdo0T2mGsvejO3Tgw5DZMVSJ3WCWeuv" alt="ギフトブランドのブランディング＆サイト構築のデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
@@ -437,7 +457,7 @@
                             <!-- Work Item 3 -->
                             <div onclick="navigateTo('work-detail-3')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/1-7CXCoXIlSHg5NCuIEcfv8Td7kduKSfi" alt="Work 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/1-7CXCoXIlSHg5NCuIEcfv8Td7kduKSfi" alt="春の新生活応援キャンペーンLP制作のデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
@@ -451,7 +471,7 @@
                             <!-- Work Item 4 -->
                             <div onclick="navigateTo('work-detail-4')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/1mmq5kNmX8QvIaDJIAUj7LkYwvZx1_A6F" alt="Work 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/1mmq5kNmX8QvIaDJIAUj7LkYwvZx1_A6F" alt="IT企業 採用特化型LP制作のデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
@@ -465,7 +485,7 @@
                             <!-- Work Item 5 -->
                             <div onclick="navigateTo('work-detail-5')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/18YQRvpy9ZHSv0cDkBDpTHTH5RfFmhHEQ" alt="Work 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/18YQRvpy9ZHSv0cDkBDpTHTH5RfFmhHEQ" alt="オーガニックブランドECサイト構築のデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
@@ -479,7 +499,7 @@
                             <!-- Work Item 6 -->
                             <div onclick="navigateTo('work-detail-6')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/1-JbjI6iaV6k7RIZDLThaYmNHksQJN-4x" alt="Work 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/1-JbjI6iaV6k7RIZDLThaYmNHksQJN-4x" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
@@ -733,9 +753,9 @@
                 </button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QbHs448KbFS_IsHZ8-VGzxwUMBvYCNyv" alt="Work 1-1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1NBqnTzdtEu3JuPNkrHFWZDsF4OOHlyks" alt="Work 1-2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1Y1NYz0d7L20gbBKIxp34pVQtmvzHZOp2" alt="Work 1-3" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QbHs448KbFS_IsHZ8-VGzxwUMBvYCNyv" alt="製造業コーポレートサイト・リニューアルのデザイン画像1" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1NBqnTzdtEu3JuPNkrHFWZDsF4OOHlyks" alt="製造業コーポレートサイト・リニューアルのデザイン画像2" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1Y1NYz0d7L20gbBKIxp34pVQtmvzHZOp2" alt="製造業コーポレートサイト・リニューアルのデザイン画像3" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">Corporate Site</span></div>
@@ -765,9 +785,9 @@
                 </button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1zqdo0T2mGsvejO3Tgw5DZMVSJ3WCWeuv" alt="Work 2-1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1bjlU87ZOpzGAH4BsSidJqC4hNe5IDOgd" alt="Work 2-2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1kJa1i9dCraTWAOHM0-hAfpuRIiJe2Ffl" alt="Work 2-3" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1zqdo0T2mGsvejO3Tgw5DZMVSJ3WCWeuv" alt="ギフトブランドのブランディング＆サイト構築のデザイン画像1" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1bjlU87ZOpzGAH4BsSidJqC4hNe5IDOgd" alt="ギフトブランドのブランディング＆サイト構築のデザイン画像2" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1kJa1i9dCraTWAOHM0-hAfpuRIiJe2Ffl" alt="ギフトブランドのブランディング＆サイト構築のデザイン画像3" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12 w-full overflow-hidden">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">Brand Site</span></div>
@@ -797,11 +817,11 @@
                 </button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-7CXCoXIlSHg5NCuIEcfv8Td7kduKSfi" alt="Work 3-1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1RD6rAp5yIN8y5OLDtvBnlIRs9XX5xXWT" alt="Work 3-2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1lYTRUY-fyCpCYeTwVCigJ8tMgEGru4QO" alt="Work 3-3" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1f7AwoZ4BqqlY2taf3BgKy34qTxqBAK7a" alt="Work 3-4" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QjemTuyzQsk_E3fYSBfRr9zBn1Y5beVf" alt="Work 3-5" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-7CXCoXIlSHg5NCuIEcfv8Td7kduKSfi" alt="春の新生活応援キャンペーンLP制作のデザイン画像1" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1RD6rAp5yIN8y5OLDtvBnlIRs9XX5xXWT" alt="春の新生活応援キャンペーンLP制作のデザイン画像2" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1lYTRUY-fyCpCYeTwVCigJ8tMgEGru4QO" alt="春の新生活応援キャンペーンLP制作のデザイン画像3" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1f7AwoZ4BqqlY2taf3BgKy34qTxqBAK7a" alt="春の新生活応援キャンペーンLP制作のデザイン画像4" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QjemTuyzQsk_E3fYSBfRr9zBn1Y5beVf" alt="春の新生活応援キャンペーンLP制作のデザイン画像5" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12 w-full overflow-hidden">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">Landing Page</span></div>
@@ -829,14 +849,14 @@
                 <button onclick="navigateTo('web')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group"><i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る</button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1mmq5kNmX8QvIaDJIAUj7LkYwvZx1_A6F" alt="Work 4-1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/13meQlbTBu8QnemRwffSeDnU0PrIjEkod" alt="Work 4-2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QlK48y7Zl5Hgz8gv8TzOkhfY1pM4ife6" alt="Work 4-3" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1gUIwd3SNjaZ-89N-nX4Nszxh1DcHt_N0" alt="Work 4-4" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1NiTqaqFeevfM8bpLs2uCV1V36GMSmOC2" alt="Work 4-5" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1_NZ-5hofLHAef1DfBdhwoAy16PCTqLTJ" alt="Work 4-6" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1tvDx5hz9Pm5_dp6PE5cbkf2PNhG3q08C" alt="Work 4-7" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-nxkIEcIUnF-FBSVYahSJ7nhE-D8o3ZS" alt="Work 4-8" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1mmq5kNmX8QvIaDJIAUj7LkYwvZx1_A6F" alt="IT企業 採用特化型LP制作のデザイン画像1" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/13meQlbTBu8QnemRwffSeDnU0PrIjEkod" alt="IT企業 採用特化型LP制作のデザイン画像2" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QlK48y7Zl5Hgz8gv8TzOkhfY1pM4ife6" alt="IT企業 採用特化型LP制作のデザイン画像3" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1gUIwd3SNjaZ-89N-nX4Nszxh1DcHt_N0" alt="IT企業 採用特化型LP制作のデザイン画像4" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1NiTqaqFeevfM8bpLs2uCV1V36GMSmOC2" alt="IT企業 採用特化型LP制作のデザイン画像5" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1_NZ-5hofLHAef1DfBdhwoAy16PCTqLTJ" alt="IT企業 採用特化型LP制作のデザイン画像6" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1tvDx5hz9Pm5_dp6PE5cbkf2PNhG3q08C" alt="IT企業 採用特化型LP制作のデザイン画像7" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-nxkIEcIUnF-FBSVYahSJ7nhE-D8o3ZS" alt="IT企業 採用特化型LP制作のデザイン画像8" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12 w-full overflow-hidden">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">Recruit LP</span></div>
@@ -864,11 +884,11 @@
                 <button onclick="navigateTo('web')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group"><i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る</button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/18YQRvpy9ZHSv0cDkBDpTHTH5RfFmhHEQ" alt="Work 5-1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/14ToY7XIGPZ1oGUa0t7uBDNz17ltmEy-k" alt="Work 5-2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1VzdKM6pXyhd1cZwpna6zasJ7q20Q-ick" alt="Work 5-3" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1YbLsdBq_jWV5Rui8iAfI1BbDkxqBcgp-" alt="Work 5-4" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1lldOocyQub8vo5-mtcnveTjmk5aUuwKD" alt="Work 5-5" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/18YQRvpy9ZHSv0cDkBDpTHTH5RfFmhHEQ" alt="オーガニックブランドECサイト構築のデザイン画像1" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/14ToY7XIGPZ1oGUa0t7uBDNz17ltmEy-k" alt="オーガニックブランドECサイト構築のデザイン画像2" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1VzdKM6pXyhd1cZwpna6zasJ7q20Q-ick" alt="オーガニックブランドECサイト構築のデザイン画像3" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1YbLsdBq_jWV5Rui8iAfI1BbDkxqBcgp-" alt="オーガニックブランドECサイト構築のデザイン画像4" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1lldOocyQub8vo5-mtcnveTjmk5aUuwKD" alt="オーガニックブランドECサイト構築のデザイン画像5" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12 w-full overflow-hidden">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">EC Site</span></div>
@@ -896,11 +916,11 @@
                 <button onclick="navigateTo('web')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group"><i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る</button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-JbjI6iaV6k7RIZDLThaYmNHksQJN-4x" alt="Work 6-1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1R6iWrjaoreIH8OHfvBNH3bsJ25HeiIXg" alt="Work 6-2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1yju2WcL0RHmhpRshp8F4UGfm5uLacJTg" alt="Work 6-3" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1baAQTALCwYI3-XGCKDvj_9i6ykXplNlW" alt="Work 6-4" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/14HLo6Ys0IJbeInStwEdILHs_y3HD_c_b" alt="Work 6-5" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-JbjI6iaV6k7RIZDLThaYmNHksQJN-4x" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像1" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1R6iWrjaoreIH8OHfvBNH3bsJ25HeiIXg" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像2" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1yju2WcL0RHmhpRshp8F4UGfm5uLacJTg" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像3" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1baAQTALCwYI3-XGCKDvj_9i6ykXplNlW" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像4" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/14HLo6Ys0IJbeInStwEdILHs_y3HD_c_b" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像5" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12 w-full overflow-hidden">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">Custom EC</span></div>
