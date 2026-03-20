@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 基本のSEOメタタグ -->
-    <title>Web制作・ECコンサル・AI導入支援 | answer.thee. (アンサー・ジー)</title>
-    <meta name="description" content="answer.thee.（アンサー・ジー）は、現場で培った営業力と最新のWEB・AIスキルを掛け合わせ、中小企業の売上に直結するWeb制作、ECコンサルティング、AI導入支援ソリューションを提供します。">
-    <meta name="keywords" content="Web制作, ECコンサルティング, AI導入支援, ランディングページ制作, コーポレートサイト制作, answer.thee.">
+    <!-- 基本のSEOメタタグ (地域名と主要キーワードを強化) -->
+    <title>熊本のWeb制作・ECコンサル・AI導入支援 | answer.thee. (アンサー・ジー)</title>
+    <meta name="description" content="熊本県宇土市を拠点に全国対応。answer.thee.（アンサー・ジー）は、現場で培った営業力と最新のWEB・AIスキルを掛け合わせ、中小企業の売上に直結するWeb制作、ECコンサルティング、AI導入支援を提供します。">
+    <meta name="keywords" content="熊本, 宇土市, Web制作, ECコンサルティング, AI導入支援, ランディングページ制作, Shopify, コーポレートサイト制作, answer.thee.">
     
     <!-- OGPタグ (SNSでのシェア用) -->
-    <meta property="og:title" content="Web制作・ECコンサル・AI導入支援 | answer.thee. (アンサー・ジー)">
-    <meta property="og:description" content="現場で培った営業力と最新のWEB・AIスキルを掛け合わせ、お客様の売上に直結するソリューションをご提案します。">
+    <meta property="og:title" content="熊本のWeb制作・ECコンサル・AI導入支援 | answer.thee. (アンサー・ジー)">
+    <meta property="og:description" content="熊本から全国へ。現場で培った営業力と最新のWEB・AIスキルを掛け合わせ、お客様の売上に直結するソリューションをご提案します。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://answer-thee.com/"> <!-- ※公開時に実際のURLに変更してください -->
     <meta property="og:image" content="https://answer-thee.com/ogp-image.jpg"> <!-- ※公開時に実際のOGP画像URLに変更してください -->
     <meta property="og:site_name" content="answer.thee.">
+    <meta property="og:locale" content="ja_JP">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Web制作・ECコンサル・AI導入支援 | answer.thee.">
-    <meta name="twitter:description" content="現場で培った営業力と最新のWEB・AIスキルを掛け合わせ、お客様の売上に直結するソリューションをご提案します。">
+    <meta name="twitter:title" content="熊本のWeb制作・ECコンサル・AI導入 | answer.thee.">
+    <meta name="twitter:description" content="現場で培った営業力と最新のWEB・AIスキルで、お客様の売上に直結するソリューションをご提案します。">
     <meta name="twitter:image" content="https://answer-thee.com/ogp-image.jpg"> <!-- ※公開時に実際の画像URLに変更してください -->
 
     <!-- Canonical URL (正規URLの指定) -->
@@ -30,6 +31,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     
     <!-- Lucide Icons -->
@@ -123,7 +126,9 @@
         
         <!-- ヘッダー -->
         <header class="p-4 md:p-8 flex justify-between items-center bg-white sticky top-0 z-30 border-b border-gray-50">
-            <div onclick="navigateTo('home')" class="flex items-center gap-2 text-brand-blue font-black text-xl md:text-2xl tracking-tighter cursor-pointer hover:text-brand-yellow transition-colors duration-300 font-montserrat group">
+            <!-- SEO: ロゴ部分に不可視のH1を配置し、セマンティクスを強化 -->
+            <h1 class="sr-only">熊本のWeb制作・ECコンサル・AI導入支援 | answer.thee. (アンサー・ジー)</h1>
+            <div onclick="navigateTo('home')" class="flex items-center gap-2 text-brand-blue font-black text-xl md:text-2xl tracking-tighter cursor-pointer hover:text-brand-yellow transition-colors duration-300 font-montserrat group" aria-label="トップページへ戻る">
                 <div class="w-8 h-8 md:w-10 md:h-10 bg-brand-blue rounded-lg md:rounded-xl flex items-center justify-center text-brand-yellow group-hover:bg-brand-yellow group-hover:text-brand-blue transition-colors duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 md:w-6 md:h-6">
                         <path d="M21 16V8L12 3L3 8V16L12 21L21 16Z" />
@@ -144,7 +149,7 @@
         </header>
 
         <!-- モバイルメニューオーバーレイ -->
-        <div id="mobile-menu-overlay" class="animate-fade-in">
+        <div id="mobile-menu-overlay" class="animate-fade-in" aria-hidden="true">
             <button onclick="toggleMobileMenu()" class="absolute top-6 right-6" aria-label="メニューを閉じる">
                 <i data-lucide="x" class="w-8 h-8 text-white"></i>
             </button>
@@ -154,12 +159,12 @@
         </div>
 
         <!-- コンテンツエリア -->
-        <main class="flex-1 overflow-y-auto relative">
+        <main class="flex-1 overflow-y-auto relative flex flex-col">
             
             <!-- ============================
                  1. HOME PAGE
                  ============================ -->
-            <section id="home" class="page-section active p-3 md:p-8 pt-0 animate-zoom-in h-full">
+            <section id="home" class="page-section active p-3 md:p-8 pt-0 animate-zoom-in flex-grow">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 pb-8 lg:h-full">
                     
                     <div class="lg:col-span-1 bg-brand-blue rounded-2xl md:rounded-3xl p-8 md:p-12 flex flex-col justify-center items-center text-white relative overflow-hidden shadow-lg min-h-[450px] md:min-h-[600px] lg:h-full group/hero cursor-default">
@@ -174,12 +179,15 @@
                         </div>
 
                         <div class="relative z-10 max-w-lg text-center">
-                            <h1 class="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-4 md:mb-6 font-montserrat">
+                            <h2 class="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-4 md:mb-6 font-montserrat">
                                 Design the<br/>
                                 <span class="text-brand-yellow">Answer.</span>
-                            </h1>
-                            <p class="text-blue-100 font-medium text-base md:text-lg leading-relaxed mb-6 md:mb-8">
-                                ビジネスに最適な「解」を提供します
+                            </h2>
+                            <!-- SEO: キャッチコピーにSEOキーワードを含める -->
+                            <p class="text-blue-100 font-medium text-[13px] sm:text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+                                熊本から全国へ。<br>
+                                Web制作・EC・AIでビジネスに<br>
+                                最適な「解」を提供します。
                             </p>
                             <button onclick="navigateTo('contact')" class="bg-brand-yellow text-brand-blue px-8 md:px-10 py-3 md:py-4 rounded-full font-bold hover:bg-white transition-colors inline-flex items-center gap-2 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200">
                                 Free Consultation <i data-lucide="arrow-right" class="w-4 h-4"></i>
@@ -209,7 +217,7 @@
                                 <i data-lucide="shopping-cart" class="w-6 h-6 md:w-8 md:h-8"></i>
                             </div>
                             <h2 class="text-base md:text-lg font-bold font-montserrat leading-tight mb-1 transition-transform duration-300 group-hover:scale-110 uppercase">EC Consulting</h2>
-                            <p class="text-[10px] md:text-sm opacity-90">売れない理由を特定し、選ばれる<br class="hidden md:block">ショップへと攻略します。</p>
+                            <p class="text-[10px] md:text-sm opacity-90">売れない理由を特定し、<br>選ばれるショップへと攻略します。</p>
                         </div>
 
                         <div onclick="navigateTo('profile')" class="col-span-1 bg-brand-blue text-white rounded-2xl md:rounded-3xl p-5 md:p-6 flex flex-col justify-center items-center text-center cursor-pointer hover:bg-brand-yellow hover:text-brand-blue transition-colors group shadow-md h-full">
@@ -232,7 +240,7 @@
             <!-- ============================
                  2. PROFILE PAGE
                  ============================ -->
-            <section id="profile" class="page-section p-4 md:p-12 max-w-5xl mx-auto animate-fade-in relative">
+            <section id="profile" class="page-section p-4 md:p-12 max-w-5xl mx-auto animate-fade-in relative flex-grow w-full">
                 <!-- フローティング戻るボタン -->
                 <button onclick="navigateTo('home')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group">
                     <i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る
@@ -243,26 +251,31 @@
                     <div class="absolute top-0 right-0 w-64 h-64 bg-brand-yellow rounded-full blur-[80px] opacity-20"></div>
                     
                     <div class="w-32 h-32 md:w-40 md:h-40 bg-white rounded-full mx-auto mb-6 overflow-hidden border-4 border-brand-yellow shadow-lg relative z-10">
-                        <img src="https://lh3.googleusercontent.com/d/1DIYdCzuRtbyQQxE1wlNCugTt07oNpIOF" alt="answer.thee. 代表 笹原 賢一のプロフィール画像" class="w-full h-full object-cover object-[50%_20%]">
+                        <img src="https://lh3.googleusercontent.com/d/1DIYdCzuRtbyQQxE1wlNCugTt07oNpIOF" alt="answer.thee. 代表 笹原 賢一のプロフィール画像" loading="lazy" decoding="async" class="w-full h-full object-cover object-[50%_20%]">
                     </div>
                     
-                    <h1 class="text-2xl md:text-4xl font-black mb-2 font-montserrat tracking-widest relative z-10">
+                    <h2 class="text-2xl md:text-4xl font-black mb-2 font-montserrat tracking-widest relative z-10">
                         笹原 賢一 <span class="text-lg md:text-xl font-normal ml-2">Kenichi Sasahara</span>
-                    </h1>
+                    </h2>
                     <p class="text-brand-yellow font-bold text-sm md:text-base tracking-widest uppercase relative z-10">
                         answer.thee. 代表 / WEBディレクター
                     </p>
+                    <div class="text-blue-100 text-xs md:text-sm mt-3 relative z-10 flex items-center justify-center gap-1.5">
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 md:w-4 md:h-4"></i>
+                        <span>〒869-0436 熊本県宇土市定府町65番地サンビレッジ定府202</span>
+                    </div>
                     <div class="w-12 h-1 bg-brand-yellow mx-auto my-6 relative z-10"></div>
                     
                     <div class="relative z-10">
                         <p class="font-bold text-white text-lg md:text-xl border-b border-brand-yellow pb-1 mb-4 inline-block">
-                            農業からWEBクリエイターへ。異色の経歴を持つパートナー
+                            農業からWEBクリエイターへ。異色の経歴を持つビジネスパートナー
                         </p>
                         <p class="text-blue-100 leading-loose text-sm md:text-base max-w-3xl mx-auto text-left md:text-center">
-                            20年以上にわたり、泥臭いリアルなビジネスの現場で営業活動や店舗運営に従事してきました。<br class="block mb-2 md:hidden">
-                            そこから一念発起してプログラミングとWEB制作を学び、デジタル領域へ。<br class="block mb-2 md:hidden">
-                            現場で培った血の通った「営業力」と、最新の「WEB・AIスキル」を掛け合わせ、机上の空論ではない、<br class="hidden md:block">
-                            お客様の売上に直結する「結果を出すソリューション」をご提案します。
+                            20年以上にわたり、泥臭いリアルなビジネスの現場で営業活動や店舗運営に従事してきました。<br>
+                            そこから一念発起してプログラミングとWEB制作を学び、デジタル領域へ。<br>
+                            <br class="hidden md:block">
+                            現場で培った血の通った「営業力」と、最新の「WEB・AIスキル」を掛け合わせ、<br>
+                            机上の空論ではない、お客様の売上に直結する「結果を出すソリューション」をご提案します。
                         </p>
                     </div>
                 </div>
@@ -301,7 +314,7 @@
                             <span class="text-xs font-bold text-brand-blue bg-blue-50 px-2 py-1 rounded tracking-wider">現在</span>
                             <h3 class="text-lg md:text-xl font-bold text-slate-800 mt-2">answer.thee. 設立</h3>
                             <p class="text-sm md:text-base text-slate-600 mt-2 leading-relaxed">
-                                WEB制作・EC構築・営業支援をワンストップで提供。<br class="hidden md:block">中小企業の営業課題をデジタルの力で解決するソリューションを展開。
+                                熊本県宇土市を拠点に、WEB制作・EC構築・営業支援をワンストップで提供。<br class="hidden md:block">中小企業の営業課題をデジタルの力で解決するソリューションを展開。
                             </p>
                         </div>
 
@@ -352,14 +365,14 @@
             <!-- ============================
                  3. CONTACT PAGE
                  ============================ -->
-            <section id="contact" class="page-section p-4 md:p-12 max-w-3xl mx-auto animate-fade-in">
+            <section id="contact" class="page-section p-4 md:p-12 max-w-3xl mx-auto animate-fade-in flex-grow w-full">
                 <button onclick="navigateTo('home')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group">
                     <i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る
                 </button>
 
                 <div class="text-center mb-8 md:mb-12">
-                    <h1 class="text-2xl md:text-3xl font-black text-brand-blue mb-4 font-montserrat tracking-widest uppercase">CONTACT</h1>
-                    <p class="text-sm md:text-base text-slate-500">制作のご依頼・ご相談など、お気軽にお問い合わせください</p>
+                    <h2 class="text-2xl md:text-3xl font-black text-brand-blue mb-4 font-montserrat tracking-widest uppercase">CONTACT</h2>
+                    <p class="text-sm md:text-base text-slate-500">制作のご依頼・ご相談など、お気軽にお問い合わせください<br>（全国オンライン対応可能・熊本県内は対面相談も可能です）</p>
                 </div>
 
                 <form class="bg-white p-6 md:p-12 rounded-2xl md:rounded-3xl shadow-lg border border-slate-100 space-y-4 md:space-y-6 mb-20" onsubmit="submitForm(event)">
@@ -369,18 +382,18 @@
 
                     <div class="grid md:grid-cols-2 gap-4 md:gap-6">
                         <div class="space-y-1 md:space-y-2">
-                            <label class="text-xs md:text-sm font-bold text-brand-blue">お名前</label>
-                            <input type="text" name="name" class="w-full px-4 py-3 bg-slate-50 rounded-xl border border-slate-200 focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition-all text-sm" placeholder="山田 太郎" required>
+                            <label class="text-xs md:text-sm font-bold text-brand-blue" for="name">お名前</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-slate-50 rounded-xl border border-slate-200 focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition-all text-sm" placeholder="山田 太郎" required>
                         </div>
                         <div class="space-y-1 md:space-y-2">
-                            <label class="text-xs md:text-sm font-bold text-brand-blue">メールアドレス</label>
-                            <input type="email" name="email" class="w-full px-4 py-3 bg-slate-50 rounded-xl border border-slate-200 focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition-all text-sm" placeholder="sample@email.com" required>
+                            <label class="text-xs md:text-sm font-bold text-brand-blue" for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-slate-50 rounded-xl border border-slate-200 focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition-all text-sm" placeholder="sample@email.com" required>
                         </div>
                     </div>
                     
                     <div class="space-y-1 md:space-y-2">
-                        <label class="text-xs md:text-sm font-bold text-brand-blue">ご相談内容のジャンル</label>
-                        <select name="category" class="w-full px-4 py-3 bg-slate-50 rounded-xl border border-slate-200 focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition-all text-sm">
+                        <label class="text-xs md:text-sm font-bold text-brand-blue" for="category">ご相談内容のジャンル</label>
+                        <select id="category" name="category" class="w-full px-4 py-3 bg-slate-50 rounded-xl border border-slate-200 focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition-all text-sm">
                             <option value="WEBデザイン・制作について">WEBデザイン・制作について</option>
                             <option value="AI導入・講習について">AI導入・講習について</option>
                             <option value="ECコンサルティングについて">ECコンサルティングについて</option>
@@ -389,8 +402,8 @@
                     </div>
 
                     <div class="space-y-1 md:space-y-2">
-                        <label class="text-xs md:text-sm font-bold text-brand-blue">メッセージ本文</label>
-                        <textarea name="message" rows="5" class="w-full px-4 py-3 bg-slate-50 rounded-xl border border-slate-200 focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition-all text-sm" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+                        <label class="text-xs md:text-sm font-bold text-brand-blue" for="message">メッセージ本文</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-slate-50 rounded-xl border border-slate-200 focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition-all text-sm" placeholder="お問い合わせ内容をご記入ください" required></textarea>
                     </div>
 
                     <div class="text-center pt-4">
@@ -406,7 +419,7 @@
                  ============================ -->
             
             <!-- Web Design Detail (Works List) -->
-            <section id="web" class="page-section p-4 md:p-12 animate-fade-in relative">
+            <section id="web" class="page-section p-4 md:p-12 animate-fade-in relative flex-grow">
                 <button onclick="navigateTo('home')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group">
                     <i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る
                 </button>
@@ -417,96 +430,96 @@
                             <div class="inline-block p-4 rounded-2xl mb-4 md:mb-6 bg-brand-blue text-white shadow-md">
                                 <i data-lucide="monitor" class="w-8 h-8"></i>
                             </div>
-                            <h1 class="text-3xl md:text-5xl font-black text-brand-blue mb-2 font-montserrat tracking-tight uppercase">WEB Design</h1>
+                            <h2 class="text-3xl md:text-5xl font-black text-brand-blue mb-2 font-montserrat tracking-tight uppercase">WEB Design</h2>
                             <p class="text-base md:text-lg font-bold text-brand-yellow mb-4 md:mb-6">デザイン・LP・ロゴ制作</p>
                             <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-8">企業の顔となるサイトから、成果に直結するLP、ロゴ制作まで。<br class="hidden md:block">目的にコミットするデザインを提供します。</p>
                         </div>
                     </div>
                     <div class="md:col-span-2 pb-24">
-                        <h2 class="text-xl md:text-2xl font-bold text-brand-blue border-b border-gray-200 pb-4 mb-8 flex items-center gap-2 font-montserrat"><i data-lucide="layers" class="w-6 h-6"></i> Works</h2>
+                        <h3 class="text-xl md:text-2xl font-bold text-brand-blue border-b border-gray-200 pb-4 mb-8 flex items-center gap-2 font-montserrat"><i data-lucide="layers" class="w-6 h-6"></i> Works</h3>
                         
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
                             <!-- Work Item 1 -->
                             <div onclick="navigateTo('work-detail-1')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/1QbHs448KbFS_IsHZ8-VGzxwUMBvYCNyv" alt="製造業コーポレートサイト・リニューアルのデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/1QbHs448KbFS_IsHZ8-VGzxwUMBvYCNyv" alt="製造業コーポレートサイト・リニューアル" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
                                 </div>
                                 <div class="p-4 md:p-6 w-full overflow-hidden">
                                     <span class="text-[10px] font-bold px-2 py-1 rounded bg-blue-50 text-brand-blue uppercase tracking-tighter">Corporate Site</span>
-                                    <h3 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">製造業コーポレートサイト・リニューアル</h3>
+                                    <h4 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">製造業コーポレートサイト・リニューアル</h4>
                                 </div>
                             </div>
 
                             <!-- Work Item 2 -->
                             <div onclick="navigateTo('work-detail-2')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/1zqdo0T2mGsvejO3Tgw5DZMVSJ3WCWeuv" alt="ギフトブランドのブランディング＆サイト構築のデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/1zqdo0T2mGsvejO3Tgw5DZMVSJ3WCWeuv" alt="ギフトブランドのブランディング＆サイト構築" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
                                 </div>
                                 <div class="p-4 md:p-6 w-full overflow-hidden">
                                     <span class="text-[10px] font-bold px-2 py-1 rounded bg-blue-50 text-brand-blue uppercase tracking-tighter">Brand Site</span>
-                                    <h3 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">ギフトブランドのブランディング＆サイト構築</h3>
+                                    <h4 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">ギフトブランドのブランディング＆サイト構築</h4>
                                 </div>
                             </div>
 
                             <!-- Work Item 3 -->
                             <div onclick="navigateTo('work-detail-3')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/1-7CXCoXIlSHg5NCuIEcfv8Td7kduKSfi" alt="春の新生活応援キャンペーンLP制作のデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/1-7CXCoXIlSHg5NCuIEcfv8Td7kduKSfi" alt="春の新生活応援キャンペーンLP制作" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
                                 </div>
                                 <div class="p-4 md:p-6 w-full overflow-hidden">
                                     <span class="text-[10px] font-bold px-2 py-1 rounded bg-blue-50 text-brand-blue uppercase tracking-tighter">Landing Page</span>
-                                    <h3 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">春の新生活応援キャンペーンLP制作</h3>
+                                    <h4 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">春の新生活応援キャンペーンLP制作</h4>
                                 </div>
                             </div>
 
                             <!-- Work Item 4 -->
                             <div onclick="navigateTo('work-detail-4')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/1mmq5kNmX8QvIaDJIAUj7LkYwvZx1_A6F" alt="IT企業 採用特化型LP制作のデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/1mmq5kNmX8QvIaDJIAUj7LkYwvZx1_A6F" alt="IT企業 採用特化型LP制作" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
                                 </div>
                                 <div class="p-4 md:p-6 w-full overflow-hidden">
                                     <span class="text-[10px] font-bold px-2 py-1 rounded bg-blue-50 text-brand-blue uppercase tracking-tighter">Recruit LP</span>
-                                    <h3 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">IT企業 採用特化型LP制作</h3>
+                                    <h4 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">IT企業 採用特化型LP制作</h4>
                                 </div>
                             </div>
 
                             <!-- Work Item 5 -->
                             <div onclick="navigateTo('work-detail-5')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/18YQRvpy9ZHSv0cDkBDpTHTH5RfFmhHEQ" alt="オーガニックブランドECサイト構築のデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/18YQRvpy9ZHSv0cDkBDpTHTH5RfFmhHEQ" alt="オーガニックブランドECサイト構築" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
                                 </div>
                                 <div class="p-4 md:p-6 w-full overflow-hidden">
                                     <span class="text-[10px] font-bold px-2 py-1 rounded bg-blue-50 text-brand-blue uppercase tracking-tighter">EC Site</span>
-                                    <h3 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">オーガニックブランドECサイト構築</h3>
+                                    <h4 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">オーガニックブランドECサイト構築</h4>
                                 </div>
                             </div>
 
                             <!-- Work Item 6 -->
                             <div onclick="navigateTo('work-detail-6')" class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                                 <div class="aspect-video relative bg-slate-100 overflow-hidden">
-                                    <img src="https://lh3.googleusercontent.com/d/1-JbjI6iaV6k7RIZDLThaYmNHksQJN-4x" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <img src="https://lh3.googleusercontent.com/d/1-JbjI6iaV6k7RIZDLThaYmNHksQJN-4x" alt="パーソナライズ・サプリメントECサイト構築" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-brand-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
                                         <span class="text-white text-sm font-bold flex items-center gap-2 border-b-2 border-brand-yellow pb-1">実績詳細を見る</span>
                                     </div>
                                 </div>
                                 <div class="p-4 md:p-6 w-full overflow-hidden">
                                     <span class="text-[10px] font-bold px-2 py-1 rounded bg-blue-50 text-brand-blue uppercase tracking-tighter">Custom EC</span>
-                                    <h3 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">パーソナライズ・サプリメントECサイト構築</h3>
+                                    <h4 class="text-[11.5px] sm:text-sm md:text-[13px] lg:text-base font-bold text-slate-800 mt-2 truncate tracking-tighter">パーソナライズ・サプリメントECサイト構築</h4>
                                 </div>
                             </div>
                         </div>
@@ -515,7 +528,7 @@
             </section>
 
             <!-- AI Solutions Detail -->
-            <section id="ai" class="page-section p-4 md:p-12 animate-fade-in relative">
+            <section id="ai" class="page-section p-4 md:p-12 animate-fade-in relative flex-grow">
                 <!-- フローティング戻るボタン -->
                 <button onclick="navigateTo('home')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group">
                     <i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る
@@ -526,7 +539,7 @@
                         <div class="inline-block p-4 rounded-3xl bg-brand-blue text-white shadow-lg mb-4 group-hover:bg-brand-yellow group-hover:text-brand-blue transition-colors duration-300">
                             <i data-lucide="brain-circuit" class="w-8 h-8 md:w-10 md:h-10"></i>
                         </div>
-                        <h1 class="text-3xl md:text-6xl font-black text-brand-blue font-montserrat group-hover:text-brand-yellow transition-colors duration-300 uppercase">AI Solutions</h1>
+                        <h2 class="text-3xl md:text-6xl font-black text-brand-blue font-montserrat group-hover:text-brand-yellow transition-colors duration-300 uppercase">AI Solutions</h2>
                         <p class="text-base md:text-2xl font-bold text-brand-yellow hover:text-brand-blue transition-colors duration-300">
                             「現場」を知るからこそできる、売上に直結する AI 活用
                         </p>
@@ -536,13 +549,13 @@
                     </div>
 
                     <div class="space-y-6 md:space-y-8">
-                        <h2 class="text-xl md:text-2xl font-bold text-brand-blue border-b-4 border-brand-yellow inline-block pb-1 font-montserrat">Service Menu</h2>
+                        <h3 class="text-xl md:text-2xl font-bold text-brand-blue border-b-4 border-brand-yellow inline-block pb-1 font-montserrat">Service Menu</h3>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                             <div class="bg-white border border-slate-100 rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-md hover:shadow-xl transition-shadow">
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center mb-4 md:mb-6">
                                     <i data-lucide="shopping-cart" class="w-6 h-6"></i>
                                 </div>
-                                <h3 class="text-base md:text-lg font-bold text-slate-800 mb-3 md:mb-4">EC×AIオートメーション</h3>
+                                <h4 class="text-base md:text-lg font-bold text-slate-800 mb-3 md:mb-4">EC×AIオートメーション</h4>
                                 <ul class="text-[10.5px] sm:text-xs md:text-[11px] lg:text-sm text-slate-600 space-y-2 whitespace-nowrap tracking-tighter">
                                     <li>・商品データからのSEO最適化テキスト自動生成</li>
                                     <li>・過去データに基づいた需要予測と在庫最適化</li>
@@ -552,7 +565,7 @@
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center mb-4 md:mb-6">
                                     <i data-lucide="image" class="w-6 h-6"></i>
                                 </div>
-                                <h3 class="text-base md:text-lg font-bold text-slate-800 mb-3 md:mb-4">Creative×生成AI</h3>
+                                <h4 class="text-base md:text-lg font-bold text-slate-800 mb-3 md:mb-4">Creative×生成AI</h4>
                                 <ul class="text-[10.5px] sm:text-xs md:text-[11px] lg:text-sm text-slate-600 space-y-2 whitespace-nowrap tracking-tighter">
                                     <li>・AI画像・漫画を活用した高CVRなLP制作</li>
                                     <li>・SNS運用を加速させる投稿案・クリエイティブ量産</li>
@@ -562,7 +575,7 @@
                                 <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center mb-4 md:mb-6">
                                     <i data-lucide="message-square" class="w-6 h-6"></i>
                                 </div>
-                                <h3 class="text-base md:text-lg font-bold text-slate-800 mb-3 md:mb-4">Business×AIチャットボット</h3>
+                                <h4 class="text-base md:text-lg font-bold text-slate-800 mb-3 md:mb-4">Business×AIチャットボット</h4>
                                 <ul class="text-[10.5px] sm:text-xs md:text-[11px] lg:text-sm text-slate-600 space-y-2 whitespace-nowrap tracking-tighter">
                                     <li>・社内データ（RAG）を活用した高精度ボット</li>
                                     <li>・定型業務を自動化するAIワークフロー構築</li>
@@ -573,12 +586,12 @@
 
                     <!-- Case Studies -->
                     <div class="space-y-6 md:space-y-8">
-                        <h2 class="text-xl md:text-2xl font-bold text-brand-blue border-b-4 border-brand-yellow inline-block pb-1 font-montserrat">Case Studies</h2>
+                        <h3 class="text-xl md:text-2xl font-bold text-brand-blue border-b-4 border-brand-yellow inline-block pb-1 font-montserrat">Case Studies</h3>
                         <div class="space-y-4 md:space-y-6">
                             <div class="bg-slate-50 rounded-2xl md:rounded-3xl p-6 md:p-10 border border-slate-100">
                                 <div class="flex items-center gap-3 mb-4 md:mb-6">
                                     <span class="text-2xl md:text-3xl font-black text-brand-yellow opacity-50 font-montserrat">01.</span>
-                                    <h3 class="text-lg md:text-xl font-bold text-brand-blue">食品EC：工数を85%削減</h3>
+                                    <h4 class="text-lg md:text-xl font-bold text-brand-blue">食品EC：工数を85%削減</h4>
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
                                     <div class="space-y-1"><p class="text-[10px] font-bold text-slate-400 uppercase">課題</p><p class="text-xs md:text-sm text-slate-600 leading-relaxed">多品目の更新が追いつかず露出が遅延。</p></div>
@@ -589,7 +602,7 @@
                             <div class="bg-slate-50 rounded-2xl md:rounded-3xl p-6 md:p-10 border border-slate-100">
                                 <div class="flex items-center gap-3 mb-4 md:mb-6">
                                     <span class="text-2xl md:text-3xl font-black text-brand-yellow opacity-50 font-montserrat">02.</span>
-                                    <h3 class="text-lg md:text-xl font-bold text-brand-blue">美容LP：制作コスト60%カット＆CVR 1.8倍</h3>
+                                    <h4 class="text-lg md:text-xl font-bold text-brand-blue">美容LP：制作コスト60%カット＆CVR 1.8倍</h4>
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
                                     <div class="space-y-1"><p class="text-[10px] font-bold text-slate-400 uppercase">課題</p><p class="text-xs md:text-sm text-slate-600 leading-relaxed">撮影コストが重く、訴求のABテストが困難。</p></div>
@@ -600,7 +613,7 @@
                             <div class="bg-slate-50 rounded-2xl md:rounded-3xl p-6 md:p-10 border border-slate-100">
                                 <div class="flex items-center gap-3 mb-4 md:mb-6">
                                     <span class="text-2xl md:text-3xl font-black text-brand-yellow opacity-50 font-montserrat">03.</span>
-                                    <h3 class="text-lg md:text-xl font-bold text-brand-blue">サービス業：問い合わせ対応の50%を自動化</h3>
+                                    <h4 class="text-lg md:text-xl font-bold text-brand-blue">サービス業：問い合わせ対応の50%を自動化</h4>
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
                                     <div class="space-y-1"><p class="text-[10px] font-bold text-slate-400 uppercase">課題</p><p class="text-xs md:text-sm text-slate-600 leading-relaxed">カスタマーサポートの負荷が高く、本来の<br class="hidden md:block">営業活動が圧迫。</p></div>
@@ -613,7 +626,7 @@
 
                     <div class="bg-brand-blue rounded-2xl md:rounded-[3rem] p-8 md:p-12 text-center text-white relative overflow-hidden shadow-xl">
                         <div class="absolute top-0 right-0 w-64 h-64 bg-brand-yellow rounded-full blur-[80px] opacity-10"></div>
-                        <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 font-montserrat tracking-widest text-brand-yellow uppercase">Message</h2>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 font-montserrat tracking-widest text-brand-yellow uppercase">Message</h3>
                         <p class="text-sm md:text-xl leading-relaxed mb-6 md:mb-8 max-w-2xl mx-auto">
                             AIは魔法ではありませんが、正しく使えば強力な「武器」になります。
                             「どのツールを使うか」ではなく、<span class="font-black border-b-2 border-brand-yellow inline-block pb-1 mt-2">「ビジネスのどの課題を解決するか」</span>を最優先に伴走します。
@@ -626,7 +639,7 @@
             </section>
 
             <!-- EC Consulting Detail -->
-            <section id="ec" class="page-section p-4 md:p-12 animate-fade-in relative">
+            <section id="ec" class="page-section p-4 md:p-12 animate-fade-in relative flex-grow">
                 <button onclick="navigateTo('home')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group">
                     <i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る
                 </button>
@@ -636,7 +649,7 @@
                         <div class="inline-block p-4 rounded-3xl bg-brand-blue text-white shadow-lg mb-4 group-hover:bg-brand-yellow group-hover:text-brand-blue transition-colors duration-300">
                             <i data-lucide="shopping-cart" class="w-8 h-8 md:w-10 md:h-10"></i>
                         </div>
-                        <h1 class="text-3xl md:text-6xl font-black text-brand-blue font-montserrat group-hover:text-brand-yellow transition-colors duration-300 uppercase tracking-tighter">EC Consulting</h1>
+                        <h2 class="text-3xl md:text-6xl font-black text-brand-blue font-montserrat group-hover:text-brand-yellow transition-colors duration-300 uppercase tracking-tighter">EC Consulting</h2>
                         <p class="text-base md:text-2xl font-bold text-brand-yellow hover:text-brand-blue transition-colors duration-300">
                             モール運営から自社ECまで、利益を最大化する「攻め」の運用
                         </p>
@@ -646,13 +659,13 @@
                     </div>
 
                     <div class="space-y-8">
-                        <h2 class="text-2xl font-bold text-brand-blue border-b-4 border-brand-yellow inline-block pb-1 font-montserrat">Service Menu</h2>
+                        <h3 class="text-2xl font-bold text-brand-blue border-b-4 border-brand-yellow inline-block pb-1 font-montserrat">Service Menu</h3>
                         <div class="grid md:grid-cols-3 gap-8">
                             <div class="bg-white border border-slate-100 rounded-3xl p-5 md:p-8 shadow-md hover:shadow-xl transition-shadow">
                                 <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center mb-6">
                                     <i data-lucide="trending-up" class="w-6 h-6"></i>
                                 </div>
-                                <h3 class="text-lg font-bold text-slate-800 mb-4">モール売上改善戦略</h3>
+                                <h4 class="text-lg font-bold text-slate-800 mb-4">モール売上改善戦略</h4>
                                 <ul class="text-[10.5px] sm:text-xs md:text-[11px] lg:text-sm text-slate-600 space-y-2 whitespace-nowrap tracking-tighter">
                                     <li>・楽天/AmazonのSEO・広告最適化</li>
                                     <li>・転換率（CVR）を劇的に高めるページ改修</li>
@@ -663,7 +676,7 @@
                                 <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center mb-6">
                                     <i data-lucide="layout" class="w-6 h-6"></i>
                                 </div>
-                                <h3 class="text-lg font-bold text-slate-800 mb-4">自社EC・D2C支援</h3>
+                                <h4 class="text-lg font-bold text-slate-800 mb-4">自社EC・D2C支援</h4>
                                 <ul class="text-[10.5px] sm:text-xs md:text-[11px] lg:text-sm text-slate-600 space-y-2 whitespace-nowrap tracking-tighter">
                                     <li>・Shopifyを用いたブランドサイト構築</li>
                                     <li>・CRM/公式LINE活用によるリピート率向上</li>
@@ -674,7 +687,7 @@
                                 <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center mb-6">
                                     <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
                                 </div>
-                                <h3 class="text-lg font-bold text-slate-800 mb-4">データ分析・運営代行</h3>
+                                <h4 class="text-lg font-bold text-slate-800 mb-4">データ分析・運営代行</h4>
                                 <ul class="text-[10.5px] sm:text-xs md:text-[11px] lg:text-sm text-slate-600 space-y-2 whitespace-nowrap tracking-tighter">
                                     <li>・競合分析と市場ポジショニングの再設計</li>
                                     <li>・面倒な入稿業務やカスタマー対応の最適化</li>
@@ -685,12 +698,12 @@
                     </div>
 
                     <div class="space-y-8">
-                        <h2 class="text-2xl font-bold text-brand-blue border-b-4 border-brand-yellow inline-block pb-1 font-montserrat">Success Cases</h2>
+                        <h3 class="text-2xl font-bold text-brand-blue border-b-4 border-brand-yellow inline-block pb-1 font-montserrat">Success Cases</h3>
                         <div class="space-y-6">
                             <div class="bg-slate-50 rounded-3xl p-8 md:p-10 border border-slate-100">
                                 <div class="flex items-center gap-3 mb-6">
                                     <span class="text-3xl font-black text-brand-yellow opacity-50 font-montserrat">01.</span>
-                                    <h3 class="text-xl font-bold text-brand-blue">楽天ショップ：月商300万円から1,000万円へ</h3>
+                                    <h4 class="text-xl font-bold text-brand-blue">楽天ショップ：月商300万円から1,000万円へ</h4>
                                 </div>
                                 <div class="grid md:grid-cols-3 gap-8">
                                     <div class="space-y-2">
@@ -710,7 +723,7 @@
                             <div class="bg-slate-50 rounded-3xl p-8 md:p-10 border border-slate-100">
                                 <div class="flex items-center gap-3 mb-6">
                                     <span class="text-3xl font-black text-brand-yellow opacity-50 font-montserrat">02.</span>
-                                    <h3 class="text-xl font-bold text-brand-blue">Amazon：新ブランド立ち上げ 3ヶ月でカテゴリ1位</h3>
+                                    <h4 class="text-xl font-bold text-brand-blue">Amazon：新ブランド立ち上げ 3ヶ月でカテゴリ1位</h4>
                                 </div>
                                 <div class="grid md:grid-cols-3 gap-8">
                                     <div class="space-y-2">
@@ -731,7 +744,7 @@
                     </div>
 
                     <div class="bg-brand-blue rounded-2xl md:rounded-[3rem] p-8 md:p-12 text-center text-white relative overflow-hidden shadow-xl">
-                        <h2 class="text-xl md:text-2xl font-bold mb-6 font-montserrat tracking-widest text-brand-yellow uppercase">Our Approach</h2>
+                        <h3 class="text-xl md:text-2xl font-bold mb-6 font-montserrat tracking-widest text-brand-yellow uppercase">Our Approach</h3>
                         <p class="text-sm md:text-xl leading-relaxed mb-8">
                             「売るためのデザイン」と「数字の分析」はセットです。単なる代行ではなく、クライアントの<span class="font-black border-b-2 border-brand-yellow inline-block pb-1 mt-2">「EC事業部のパートナー」</span>として共に成長することをお約束します。
                         </p>
@@ -747,19 +760,19 @@
                  ============================ -->
             
             <!-- Work Detail 1: 製造業コーポレート -->
-            <section id="work-detail-1" class="page-section p-4 md:p-12 animate-fade-in relative">
+            <section id="work-detail-1" class="page-section p-4 md:p-12 animate-fade-in relative flex-grow">
                 <button onclick="navigateTo('web')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group">
                     <i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る
                 </button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QbHs448KbFS_IsHZ8-VGzxwUMBvYCNyv" alt="製造業コーポレートサイト・リニューアルのデザイン画像1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1NBqnTzdtEu3JuPNkrHFWZDsF4OOHlyks" alt="製造業コーポレートサイト・リニューアルのデザイン画像2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1Y1NYz0d7L20gbBKIxp34pVQtmvzHZOp2" alt="製造業コーポレートサイト・リニューアルのデザイン画像3" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QbHs448KbFS_IsHZ8-VGzxwUMBvYCNyv" alt="製造業コーポレートサイト・リニューアルのデザイン画像1" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1NBqnTzdtEu3JuPNkrHFWZDsF4OOHlyks" alt="製造業コーポレートサイト・リニューアルのデザイン画像2" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1Y1NYz0d7L20gbBKIxp34pVQtmvzHZOp2" alt="製造業コーポレートサイト・リニューアルのデザイン画像3" loading="lazy" decoding="async" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">Corporate Site</span></div>
-                        <h1 class="text-[15px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">製造業コーポレートサイト・リニューアル</h1>
+                        <h2 class="text-[15px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">製造業コーポレートサイト・リニューアル</h2>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
                             <div class="md:col-span-2 space-y-6 md:space-y-8 text-sm md:text-base">
                                 <div><h3 class="font-bold text-brand-blue mb-2 border-b-2 border-brand-yellow inline-block pb-1 uppercase tracking-widest text-xs md:text-sm">課題</h3><p class="text-slate-600 leading-relaxed">デザインの老朽化による技術力の訴求不足。<br class="hidden md:block">スマホ非対応による若手採用の苦戦。</p></div>
@@ -779,19 +792,19 @@
             </section>
 
             <!-- Work Detail 2: ギフトブランド -->
-            <section id="work-detail-2" class="page-section p-4 md:p-12 animate-fade-in relative">
+            <section id="work-detail-2" class="page-section p-4 md:p-12 animate-fade-in relative flex-grow">
                 <button onclick="navigateTo('web')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group">
                     <i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る
                 </button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1zqdo0T2mGsvejO3Tgw5DZMVSJ3WCWeuv" alt="ギフトブランドのブランディング＆サイト構築のデザイン画像1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1bjlU87ZOpzGAH4BsSidJqC4hNe5IDOgd" alt="ギフトブランドのブランディング＆サイト構築のデザイン画像2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1kJa1i9dCraTWAOHM0-hAfpuRIiJe2Ffl" alt="ギフトブランドのブランディング＆サイト構築のデザイン画像3" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1zqdo0T2mGsvejO3Tgw5DZMVSJ3WCWeuv" alt="ギフトブランドのブランディング＆サイト構築のデザイン画像1" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1bjlU87ZOpzGAH4BsSidJqC4hNe5IDOgd" alt="ギフトブランドのブランディング＆サイト構築のデザイン画像2" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1kJa1i9dCraTWAOHM0-hAfpuRIiJe2Ffl" alt="ギフトブランドのブランディング＆サイト構築のデザイン画像3" loading="lazy" decoding="async" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12 w-full overflow-hidden">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">Brand Site</span></div>
-                        <h1 class="text-[13px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">ギフトブランドのブランディング＆サイト構築</h1>
+                        <h2 class="text-[13px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">ギフトブランドのブランディング＆サイト構築</h2>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
                             <div class="md:col-span-2 space-y-6 md:space-y-8 text-sm md:text-base">
                                 <div><h3 class="font-bold text-brand-blue mb-2 border-b-2 border-brand-yellow inline-block pb-1 text-xs md:text-sm uppercase tracking-widest">課題</h3><p class="text-slate-600 leading-relaxed text-xs md:text-sm">ECモール主体による価格競争や、3つの異なる商品のコンセプト分散、洗練された自社サイト<br class="hidden md:block">の不在によるBtoB営業の機会損失を抱え、ブランドの統一と高級感の醸成が急務であった。</p></div>
@@ -811,21 +824,21 @@
             </section>
 
             <!-- Work Detail 3: キャンペーンLP -->
-            <section id="work-detail-3" class="page-section p-4 md:p-12 animate-fade-in relative">
+            <section id="work-detail-3" class="page-section p-4 md:p-12 animate-fade-in relative flex-grow">
                 <button onclick="navigateTo('web')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group">
                     <i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る
                 </button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-7CXCoXIlSHg5NCuIEcfv8Td7kduKSfi" alt="春の新生活応援キャンペーンLP制作のデザイン画像1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1RD6rAp5yIN8y5OLDtvBnlIRs9XX5xXWT" alt="春の新生活応援キャンペーンLP制作のデザイン画像2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1lYTRUY-fyCpCYeTwVCigJ8tMgEGru4QO" alt="春の新生活応援キャンペーンLP制作のデザイン画像3" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1f7AwoZ4BqqlY2taf3BgKy34qTxqBAK7a" alt="春の新生活応援キャンペーンLP制作のデザイン画像4" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QjemTuyzQsk_E3fYSBfRr9zBn1Y5beVf" alt="春の新生活応援キャンペーンLP制作のデザイン画像5" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-7CXCoXIlSHg5NCuIEcfv8Td7kduKSfi" alt="春の新生活応援キャンペーンLP制作のデザイン画像1" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1RD6rAp5yIN8y5OLDtvBnlIRs9XX5xXWT" alt="春の新生活応援キャンペーンLP制作のデザイン画像2" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1lYTRUY-fyCpCYeTwVCigJ8tMgEGru4QO" alt="春の新生活応援キャンペーンLP制作のデザイン画像3" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1f7AwoZ4BqqlY2taf3BgKy34qTxqBAK7a" alt="春の新生活応援キャンペーンLP制作のデザイン画像4" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QjemTuyzQsk_E3fYSBfRr9zBn1Y5beVf" alt="春の新生活応援キャンペーンLP制作のデザイン画像5" loading="lazy" decoding="async" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12 w-full overflow-hidden">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">Landing Page</span></div>
-                        <h1 class="text-[15px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">春の新生活応援キャンペーンLP制作</h1>
+                        <h2 class="text-[15px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">春の新生活応援キャンペーンLP制作</h2>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                             <div class="md:col-span-2 space-y-6 text-sm md:text-base">
                                 <div><h3 class="font-bold text-brand-blue mb-2 border-b-2 border-brand-yellow inline-block pb-1 text-xs md:text-sm uppercase tracking-widest">課題</h3><p class="text-slate-600 leading-relaxed">春の引っ越しシーズンに向けて、学生や新社会人をターゲットに<br class="hidden md:block">「仲介手数料無料」や「オンライン内見」といった自社の強みを分かりやすく<br class="hidden md:block">アピールし、Webからの新規問い合わせ獲得効率を向上させるため。</p></div>
@@ -845,22 +858,22 @@
             </section>
 
             <!-- Work Detail 4: IT企業 採用特化型LP制作 -->
-            <section id="work-detail-4" class="page-section p-4 md:p-12 animate-fade-in relative">
+            <section id="work-detail-4" class="page-section p-4 md:p-12 animate-fade-in relative flex-grow">
                 <button onclick="navigateTo('web')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group"><i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る</button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1mmq5kNmX8QvIaDJIAUj7LkYwvZx1_A6F" alt="IT企業 採用特化型LP制作のデザイン画像1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/13meQlbTBu8QnemRwffSeDnU0PrIjEkod" alt="IT企業 採用特化型LP制作のデザイン画像2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QlK48y7Zl5Hgz8gv8TzOkhfY1pM4ife6" alt="IT企業 採用特化型LP制作のデザイン画像3" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1gUIwd3SNjaZ-89N-nX4Nszxh1DcHt_N0" alt="IT企業 採用特化型LP制作のデザイン画像4" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1NiTqaqFeevfM8bpLs2uCV1V36GMSmOC2" alt="IT企業 採用特化型LP制作のデザイン画像5" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1_NZ-5hofLHAef1DfBdhwoAy16PCTqLTJ" alt="IT企業 採用特化型LP制作のデザイン画像6" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1tvDx5hz9Pm5_dp6PE5cbkf2PNhG3q08C" alt="IT企業 採用特化型LP制作のデザイン画像7" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-nxkIEcIUnF-FBSVYahSJ7nhE-D8o3ZS" alt="IT企業 採用特化型LP制作のデザイン画像8" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1mmq5kNmX8QvIaDJIAUj7LkYwvZx1_A6F" alt="IT企業 採用特化型LP制作のデザイン画像1" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/13meQlbTBu8QnemRwffSeDnU0PrIjEkod" alt="IT企業 採用特化型LP制作のデザイン画像2" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1QlK48y7Zl5Hgz8gv8TzOkhfY1pM4ife6" alt="IT企業 採用特化型LP制作のデザイン画像3" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1gUIwd3SNjaZ-89N-nX4Nszxh1DcHt_N0" alt="IT企業 採用特化型LP制作のデザイン画像4" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1NiTqaqFeevfM8bpLs2uCV1V36GMSmOC2" alt="IT企業 採用特化型LP制作のデザイン画像5" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1_NZ-5hofLHAef1DfBdhwoAy16PCTqLTJ" alt="IT企業 採用特化型LP制作のデザイン画像6" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1tvDx5hz9Pm5_dp6PE5cbkf2PNhG3q08C" alt="IT企業 採用特化型LP制作のデザイン画像7" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-nxkIEcIUnF-FBSVYahSJ7nhE-D8o3ZS" alt="IT企業 採用特化型LP制作のデザイン画像8" loading="lazy" decoding="async" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12 w-full overflow-hidden">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">Recruit LP</span></div>
-                        <h1 class="text-[15px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">IT企業 採用特化型LP制作</h1>
+                        <h2 class="text-[15px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">IT企業 採用特化型LP制作</h2>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                             <div class="md:col-span-2 space-y-6 text-sm md:text-base">
                                 <div><h3 class="font-bold text-brand-blue mb-2 border-b-2 border-brand-yellow inline-block pb-1 text-xs md:text-sm uppercase tracking-widest">課題</h3><p class="text-slate-600 leading-relaxed">激化するIT人材（エンジニア・デザイナー等）の獲得競争において、<br class="hidden md:block">自社のモダンな開発環境や柔軟な働き方といった魅力が求職者に十分に<br class="hidden md:block">伝わりきっておらず、エントリー数が伸び悩んでいたため。</p></div>
@@ -880,19 +893,19 @@
             </section>
 
             <!-- Work Detail 5: オーガニックブランドECサイト構築 -->
-            <section id="work-detail-5" class="page-section p-4 md:p-12 animate-fade-in relative">
+            <section id="work-detail-5" class="page-section p-4 md:p-12 animate-fade-in relative flex-grow">
                 <button onclick="navigateTo('web')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group"><i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る</button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/18YQRvpy9ZHSv0cDkBDpTHTH5RfFmhHEQ" alt="オーガニックブランドECサイト構築のデザイン画像1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/14ToY7XIGPZ1oGUa0t7uBDNz17ltmEy-k" alt="オーガニックブランドECサイト構築のデザイン画像2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1VzdKM6pXyhd1cZwpna6zasJ7q20Q-ick" alt="オーガニックブランドECサイト構築のデザイン画像3" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1YbLsdBq_jWV5Rui8iAfI1BbDkxqBcgp-" alt="オーガニックブランドECサイト構築のデザイン画像4" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1lldOocyQub8vo5-mtcnveTjmk5aUuwKD" alt="オーガニックブランドECサイト構築のデザイン画像5" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/18YQRvpy9ZHSv0cDkBDpTHTH5RfFmhHEQ" alt="オーガニックブランドECサイト構築のデザイン画像1" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/14ToY7XIGPZ1oGUa0t7uBDNz17ltmEy-k" alt="オーガニックブランドECサイト構築のデザイン画像2" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1VzdKM6pXyhd1cZwpna6zasJ7q20Q-ick" alt="オーガニックブランドECサイト構築のデザイン画像3" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1YbLsdBq_jWV5Rui8iAfI1BbDkxqBcgp-" alt="オーガニックブランドECサイト構築のデザイン画像4" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1lldOocyQub8vo5-mtcnveTjmk5aUuwKD" alt="オーガニックブランドECサイト構築のデザイン画像5" loading="lazy" decoding="async" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12 w-full overflow-hidden">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">EC Site</span></div>
-                        <h1 class="text-[15px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">オーガニックブランドECサイト構築</h1>
+                        <h2 class="text-[15px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">オーガニックブランドECサイト構築</h2>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                             <div class="md:col-span-2 space-y-6 text-sm md:text-base">
                                 <div><h3 class="font-bold text-brand-blue mb-2 border-b-2 border-brand-yellow inline-block pb-1 text-xs md:text-sm uppercase tracking-widest">課題</h3><p class="text-slate-600 leading-relaxed">既存のECサイトではオーガニックブランドとしての独自の世界観やストーリーが<br class="hidden md:block">十分に伝わらず、商品の単なる「陳列棚」になってしまっており、コアなファンの<br class="hidden md:block">獲得やリピート率の向上に課題を抱えていたため。</p></div>
@@ -912,19 +925,19 @@
             </section>
 
             <!-- Work Detail 6: パーソナライズ・サプリメントECサイト構築 -->
-            <section id="work-detail-6" class="page-section p-4 md:p-12 animate-fade-in relative">
+            <section id="work-detail-6" class="page-section p-4 md:p-12 animate-fade-in relative flex-grow">
                 <button onclick="navigateTo('web')" class="fixed bottom-6 left-6 md:bottom-8 md:left-8 z-50 flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-yellow hover:text-brand-blue hover:scale-125 transition-all duration-300 font-black text-xs md:text-sm px-6 py-3 md:px-8 md:py-4 rounded-full shadow-2xl border-2 border-brand-blue group"><i data-lucide="arrow-left" class="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-x-1 transition-transform"></i> 戻る</button>
                 <div class="max-w-5xl mx-auto bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-slate-100 mb-20">
                     <div class="flex flex-col gap-3 md:gap-4 bg-slate-100 p-3 md:p-8">
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-JbjI6iaV6k7RIZDLThaYmNHksQJN-4x" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像1" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1R6iWrjaoreIH8OHfvBNH3bsJ25HeiIXg" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像2" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1yju2WcL0RHmhpRshp8F4UGfm5uLacJTg" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像3" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1baAQTALCwYI3-XGCKDvj_9i6ykXplNlW" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像4" class="w-full h-auto"></div>
-                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/14HLo6Ys0IJbeInStwEdILHs_y3HD_c_b" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像5" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1-JbjI6iaV6k7RIZDLThaYmNHksQJN-4x" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像1" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1R6iWrjaoreIH8OHfvBNH3bsJ25HeiIXg" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像2" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1yju2WcL0RHmhpRshp8F4UGfm5uLacJTg" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像3" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/1baAQTALCwYI3-XGCKDvj_9i6ykXplNlW" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像4" loading="lazy" decoding="async" class="w-full h-auto"></div>
+                        <div class="w-full rounded-lg md:rounded-xl overflow-hidden shadow-sm border border-slate-200"><img src="https://lh3.googleusercontent.com/d/14HLo6Ys0IJbeInStwEdILHs_y3HD_c_b" alt="パーソナライズ・サプリメントECサイト構築のデザイン画像5" loading="lazy" decoding="async" class="w-full h-auto"></div>
                     </div>
                     <div class="p-6 md:p-12 w-full overflow-hidden">
                         <div class="flex items-center gap-3 mb-4"><span class="text-[10px] md:text-xs font-bold px-2 py-1 rounded-full bg-blue-50 text-brand-blue">Custom EC</span></div>
-                        <h1 class="text-[13px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">パーソナライズ・サプリメントECサイト構築</h1>
+                        <h2 class="text-[13px] sm:text-2xl md:text-4xl font-black text-slate-800 mb-6 md:mb-8 font-montserrat tracking-tighter whitespace-nowrap overflow-hidden text-ellipsis">パーソナライズ・サプリメントECサイト構築</h2>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                             <div class="md:col-span-2 space-y-6 text-sm md:text-base">
                                 <div><h3 class="font-bold text-brand-blue mb-2 border-b-2 border-brand-yellow inline-block pb-1 text-xs md:text-sm uppercase tracking-widest">課題</h3><p class="text-slate-600 leading-relaxed">ユーザーが自分に最適なサプリメントを選ぶハードルが高く途中離脱が<br class="hidden md:block">多かったため、直感的でワクワクするようなパーソナライズ（個別最適化）の<br class="hidden md:block">購買体験を提供する必要があったため。</p></div>
@@ -942,6 +955,15 @@
                     </div>
                 </div>
             </section>
+            
+            <!-- フッター (全ページ共通・ローカルSEOと信頼性対策) -->
+            <footer class="mt-auto border-t border-slate-100 py-6 md:py-8 bg-white text-center">
+                <div class="max-w-5xl mx-auto px-4">
+                    <p class="text-slate-600 font-bold mb-2">Web制作・ECコンサル・AI導入支援 | answer.thee.</p>
+                    <p class="text-slate-400 text-xs md:text-sm mb-4">熊本県宇土市から全国オンライン対応可能</p>
+                    <p class="text-slate-400 text-xs font-montserrat">&copy; 2024 answer.thee. All rights reserved.</p>
+                </div>
+            </footer>
 
         </main>
     </div>
@@ -958,13 +980,17 @@
         </div>
     </div>
 
-    <!-- ページ遷移・フォーム制卸スクリプト -->
+    <!-- ページ遷移・フォーム制御スクリプト -->
     <script>
         lucide.createIcons();
 
         function toggleMobileMenu() {
             const overlay = document.getElementById('mobile-menu-overlay');
             overlay.classList.toggle('active');
+            
+            // アクセシビリティ対応: メニュー開閉時にaria-hiddenを切り替え
+            const isHidden = overlay.classList.contains('active') ? 'false' : 'true';
+            overlay.setAttribute('aria-hidden', isHidden);
         }
 
         function showMessageModal() {
