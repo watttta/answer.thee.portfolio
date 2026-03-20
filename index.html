@@ -375,7 +375,8 @@
                     <p class="text-sm md:text-base text-slate-500">制作のご依頼・ご相談など、お気軽にお問い合わせください<br>（全国オンライン対応可能・熊本県内は対面相談も可能です）</p>
                 </div>
 
-                <form class="bg-white p-6 md:p-12 rounded-2xl md:rounded-3xl shadow-lg border border-slate-100 space-y-4 md:space-y-6 mb-20" onsubmit="submitForm(event)">
+                <!-- 初回認証用に onsubmit を外し、action と method を追加 -->
+                <form action="https://formsubmit.co/answer.thee.web@gmail.com" method="POST" class="bg-white p-6 md:p-12 rounded-2xl md:rounded-3xl shadow-lg border border-slate-100 space-y-4 md:space-y-6 mb-20">
                     
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="【answer.thee.】Webサイトからのお問い合わせ">
