@@ -400,7 +400,7 @@ section{padding:clamp(5rem,12vh,11rem) clamp(1.5rem,7vw,7rem);position:relative}
 footer{background:var(--ink);color:var(--ink-faint);padding:3rem clamp(1.5rem,7vw,7rem);border-top:1px solid #2c2922;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 footer .brand{font-family:var(--latin);font-size:1.3rem;font-weight:600;letter-spacing:.15em;color:var(--paper);text-transform:lowercase}
 footer .brand .dot{color:var(--vermilion)}
-footer .small{font-size:.72rem;letter-spacing:.1em}
+footer .small{font-size:.72rem;letter-spacing:.1em}footer .sns{display:flex;gap:.6rem;align-items:center}footer .sns a{display:inline-flex;align-items:center;gap:.35rem;padding:.42rem .9rem;border:1px solid #2c2922;border-radius:99px;color:var(--ink-faint);text-decoration:none;font-size:.78rem;letter-spacing:.08em;transition:color .2s,border-color .2s,background .2s}footer .sns a:hover{color:var(--paper);border-color:var(--vermilion);background:rgba(200,52,31,.14)}footer .sns svg{display:block}
 
 /* ---------- proofs（数字実績）---------- */
 .proof-lead{margin-top:5rem;font-family:var(--mincho);font-weight:600;font-size:clamp(1.1rem,2.4vw,1.5rem);text-align:center;color:var(--ink)}
@@ -444,6 +444,7 @@ body.menu-open .to-top{opacity:0;visibility:hidden}
     <a href="#problem">Why</a>
     <a href="#works">Works</a>
     <a href="#profile">Profile</a>
+    <a href="blog.html">Blog</a>
     <a href="#cta">Contact</a>
   </div>
   <button class="hamburger" id="hamburger" aria-label="メニュー" aria-expanded="false">
@@ -456,6 +457,7 @@ body.menu-open .to-top{opacity:0;visibility:hidden}
   <a href="#problem">Why<span class="jp">なぜ私か</span></a>
   <a href="#works">Works<span class="jp">実績</span></a>
   <a href="#profile">Profile<span class="jp">プロフィール</span></a>
+  <a href="blog.html">Blog<span class="jp">お役立ち記事</span></a>
   <a href="#cta">Contact<span class="jp">お問い合わせ</span></a>
 </div>
 
@@ -755,6 +757,15 @@ body.menu-open .to-top{opacity:0;visibility:hidden}
 
 <footer>
   <div class="brand">answer<span class="dot">.</span>thee<span class="dot">.</span></div>
+  <div class="sns">
+    <a href="https://x.com/answer_thee_web" target="_blank" rel="noopener" aria-label="X (旧Twitter)">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      <span>X</span>
+    </a>
+    <a href="https://note.com/wattta" target="_blank" rel="noopener" aria-label="note">
+      <span>note</span>
+    </a>
+  </div>
   <div class="small">© 2026 answer.thee. ── answer, to thee.</div>
 </footer>
 
